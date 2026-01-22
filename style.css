@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: lightblue;
+}
+
+.services-section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color:black;
+}
+
+.main-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: lightskyblue;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #1e293b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+}
+
+.service-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.service-card ul {
+    list-style: none;
+}
+
+.service-card ul li {
+    font-size: 0.9rem;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.service-card ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #22c55e;
+}
